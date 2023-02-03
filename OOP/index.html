@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous" ></script>
+    <title>Passwort Generator</title>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Passwort Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+            <i class="fas fa-copy"></i>
+            </button>
+        </div>
+
+        <div class="settings">
+            <div class="setting">
+                <label>Passwort Länge</label>
+                <input type="number" id="length" min='4' max='7' value='7' />
+            </div>
+            <div class="setting">
+                <label>Großbuchstaben</label> 
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label>Kleinbuchstaben</label> 
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>Zahlen</label> 
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label>Sonderzeichen</label> 
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            Erstelle Passwort
+        </button>
+    </div>
+    <script src="Generator.js"></script>
+</body>
+</html>
+
